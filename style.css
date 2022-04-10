@@ -1,0 +1,105 @@
+/* setting */
+:root {
+  --sec: BurlyWood;
+}
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* layout */
+/* design */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: DarkKhaki;
+}
+
+.quokka {
+  position: relative;
+  top: 95px;
+  margin: 50px auto;
+  width: 400px;
+  height: 420px;
+}
+
+.quokka .ear {
+  position: absolute;
+  width: 150px;
+  height: 160px;
+  border: 10px solid #000;
+  border-radius: 50%;
+  background-color: var(--sec);
+}
+.quokka .ear.left {
+  top: 35px;
+  left: 1px;
+  transform: rotate(-20deg);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.quokka .ear.right {
+  top: 35px;
+  right: 60px;
+  transform: rotate(20deg);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.quokka .face {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 300px;
+  height: 330px;
+  border-radius: 50%;
+  border: 10px solid #000;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  background-color: var(--sec);
+}
+.quokka .eye {
+  position: absolute;
+  top: 115px;
+  width: 18px;
+  height: 20px;
+  border-radius: 70%;
+  background-color: #000;
+}
+.eye.left {
+  left: 100px;
+}
+.eye.right {
+  right: 100px;
+}
+.nose {
+  position: absolute;
+  top: 140px;
+  left: 120px;
+  width: 48px;
+  height: 45px;
+  border-radius: 60% 60% 70% 70%;
+  background-color: black;
+}
+
+.mouth {
+  position: absolute;
+  left: 110px;
+  bottom: 95px;
+  width: 70px;
+  height: 100px;
+  border-top: 15px solid black;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transform: rotate(180deg);
+}
+.mouthline {
+  border-left: thick solid #000;
+  height: 45px;
+  left: 142px;
+  bottom: 100px;
+  position: absolute;
+}
