@@ -1,14 +1,11 @@
-/* setting */
 :root {
   --sec: BurlyWood;
 }
-/* reset */
 body {
   margin: 0;
   padding: 0;
 }
-/* layout */
-/* design */
+
 *,
 *:after,
 *:before {
@@ -31,10 +28,11 @@ body {
   position: absolute;
   width: 150px;
   height: 160px;
-  border: 10px solid #000;
+  /* border: 10px solid rgb(31, 27, 27); */
   border-radius: 50%;
   background-color: var(--sec);
 }
+
 .quokka .ear.left {
   top: 35px;
   left: 1px;
@@ -42,6 +40,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .quokka .ear.right {
   top: 35px;
   right: 60px;
@@ -56,11 +55,13 @@ body {
   width: 300px;
   height: 330px;
   border-radius: 50%;
-  border: 10px solid #000;
+  /* border: 10px solid #000; */
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   background-color: var(--sec);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .quokka .eye {
   position: absolute;
   top: 115px;
@@ -69,16 +70,19 @@ body {
   border-radius: 70%;
   background-color: #000;
 }
+
 .eye.left {
   left: 100px;
 }
+
 .eye.right {
   right: 100px;
 }
+
 .nose {
   position: absolute;
   top: 140px;
-  left: 120px;
+  left: 126px;
   width: 48px;
   height: 45px;
   border-radius: 60% 60% 70% 70%;
@@ -87,7 +91,7 @@ body {
 
 .mouth {
   position: absolute;
-  left: 110px;
+  left: 116px;
   bottom: 95px;
   width: 70px;
   height: 100px;
@@ -96,10 +100,54 @@ body {
   border-top-right-radius: 100px;
   transform: rotate(180deg);
 }
+
 .mouthline {
   border-left: thick solid #000;
   height: 45px;
-  left: 142px;
+  left: 148px;
   bottom: 100px;
   position: absolute;
+}
+
+.heart .left {
+  position: absolute;
+  top: -43px;
+  left: 139px;
+  width: 30px;
+  height: 19px;
+  background-color: ForestGreen;
+  border-radius: 30% 80% 0% 100% / 37% 100% 10% 83%;
+  transform: rotate(30deg);
+}
+
+.heart .right {
+  position: absolute;
+  top: -43px;
+  left: 154px;
+  width: 30px;
+  height: 19px;
+  background-color: ForestGreen;
+  border-radius: 100% 52% 100% 0% / 100% 61% 88% 60%;
+  transform: rotate(-40deg);
+}
+
+.heart .line {
+  position: absolute;
+  border: thick solid ForestGreen;
+  height: 33px;
+  top: -25px;
+  left: 158px;
+  border-radius: 20%;
+}
+
+.tooth {
+  position: absolute;
+  left: 150px;
+  bottom: 88px;
+  transform: translate(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 0 0 35% 35%;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
